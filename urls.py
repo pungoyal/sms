@@ -6,7 +6,7 @@ from django.conf.urls.defaults import *
 
 urlpatterns = patterns('',
     # Example:
-    (r'^sms/(.*)/(.*)', 'sms.consumer.views.add'),
+    (r'^sms/(?P<phone_number>.*)/(?P<message>.*)/$', 'sms.consumer.views.add'),
     (r'^sms/', 'sms.consumer.views.index'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
