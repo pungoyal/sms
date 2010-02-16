@@ -7,5 +7,6 @@ def index(request):
 def add(request, phone_number, message):
     t = Text(number=phone_number, text=message)
     t.save()
-    
-    return HttpResponse("text:%s number:%s"  % (message, phone_number))
+    print str(t)
+
+    return None
