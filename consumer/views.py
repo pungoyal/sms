@@ -9,4 +9,4 @@ def add(request, phone_number, message):
     t.save()
     print str(t)
 
-    return HttpResponse("ACK. You sent %s." % message)
+    return HttpResponse(message.encode("utf-8"))
