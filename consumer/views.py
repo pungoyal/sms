@@ -10,4 +10,4 @@ def add(request, phone_number, message):
     t = u'\u2a06\u3306\u2c06\u4a06\u4406'
     print str(t)
 
-    return HttpResponse(message.encode("utf-16"))
+    return HttpResponse(message)
